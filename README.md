@@ -9,6 +9,13 @@ tc-svg-merge <destination> <original> [[overlay1] [overlay2] [overlay3] ...]
 
 ```
 
+## Methodology
+
+Since SVG is just XML, the original file is loaded as an XmlDocument.
+Overlay files are also loaded as XmlDocuments. 
+The children of the overlay files' `svg` nodes are appended to the original document's `svg` node.
+The resultant XML is then written to the destination file.
+
 ## Notes
 
 Program returns 0 on clean exit, or a negative number otherwise
