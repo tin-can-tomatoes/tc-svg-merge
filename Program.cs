@@ -12,13 +12,13 @@ namespace TinCan.SVG.Merge{
         private static void PrintInfo()
         {
             Console.WriteLine($"tin-can.ca SVG merge (tc-svg-merge) version {PROGRAM_VER_MAJOR}.{PROGRAM_VER_MINOR}");
-            Console.WriteLine($"Copyright (c) {COPYRIGHT_YEAR} tomatoes from tin-can.ca");
+            Console.WriteLine($"Copyright (c) {COPYRIGHT_YEAR} tin-can-tomatoes");
             Console.WriteLine();
         }
         private static void PrintUsage()
         {
             Console.WriteLine();
-            Console.WriteLine($"Usage: tin-can.ca <destination> <original> [[overlay1] [overlay2] ...]");
+            Console.WriteLine($"Usage: tc-svg-merge <destination> <original> [[overlay1] [overlay2] ...]");
             Console.WriteLine();
         }
         public static int Main (string[] args)
